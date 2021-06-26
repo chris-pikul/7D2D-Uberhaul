@@ -7,7 +7,7 @@
 <setattribute xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.025</setattribute>
 
 <!-- Reset white dye again, it is incomplete in the OG -->
-<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</setattribute>
+<!-- <setattribute xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</setattribute> -->
 
 <append xpath="/item_modifiers">
 

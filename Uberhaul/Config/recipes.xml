@@ -209,6 +209,15 @@
   </recipe>
 
   <!-- END DYES -->
+  <!-- START COOKING -->
+
+  <recipe name="uberCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+    <ingredient name="resourceForgedIron" count="10"/>
+    <ingredient name="resourceElectricParts" count="4"/>
+    <ingredient name="resourceMetalPipe" count="1"/>
+  </recipe>
+
+  <!-- END COOKING -->
   <!-- START WEAPON_PARTS -->
 
   <!-- Rifle -->

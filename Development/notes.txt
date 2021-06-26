@@ -1,0 +1,7 @@
+item_modifiers got rejected because of <setattribute> with name qualifier.
+
+Weapon part schematics where in creative, but not in regular search.
+After reading weapon part schematic could not forge them.
+
+Cooking helper was in creative but no icon visible.
+Could not search or find recipe for cooking helper
