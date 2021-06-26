@@ -113,19 +113,19 @@
   <insertAfter xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
 
     <!-- Acrobatics -->
-		<perk name="perkAcrobatics" parent="skillPhysical" name_key="AcrobaticsName" desc_key="AcrobaticsDesc" icon="cp_acrobatics">
+		<perk name="perkAcrobatics" parent="skillPhysical" name_key="uberSkillsAcrobaticsName" desc_key="uberSkillsAcrobaticsDesc" icon="cp_acrobatics">
 			<effect_group>
 		    <!--safe fall distance regulated in buffs.xml-->
-				<effect_description level="1" desc_key="AcrobaticsRank1Desc" long_desc_key="AcrobaticsRank1LongDesc"/>
-				<effect_description level="2" desc_key="AcrobaticsRank2Desc" long_desc_key="AcrobaticsRank2LongDesc"/>
-				<effect_description level="3" desc_key="AcrobaticsRank3Desc" long_desc_key="AcrobaticsRank3LongDesc"/>
-				<effect_description level="4" desc_key="AcrobaticsRank4Desc" long_desc_key="AcrobaticsRank4LongDesc"/>
-				<effect_description level="5" desc_key="AcrobaticsRank5Desc" long_desc_key="AcrobaticsRank5LongDesc"/>
+				<effect_description level="1" desc_key="uberSkillsAcrobatics1Short" long_desc_key="uberSkillsAcrobatics1Long"/>
+				<effect_description level="2" desc_key="uberSkillsAcrobatics2Short" long_desc_key="uberSkillsAcrobatics2Long"/>
+				<effect_description level="3" desc_key="uberSkillsAcrobatics3Short" long_desc_key="uberSkillsAcrobatics3Long"/>
+				<effect_description level="4" desc_key="uberSkillsAcrobatics4Short" long_desc_key="uberSkillsAcrobatics4Long"/>
+				<effect_description level="5" desc_key="uberSkillsAcrobatics5Short" long_desc_key="uberSkillsAcrobatics5Long"/>
 			</effect_group>
 		</perk>
 
     <!-- Heat Synergy -->
-		<perk name="perkHeatSyn" parent="skillPhysical" name_key="HeatSynergyName" desc_key="HeatSynergyDesc" icon="cp_heatsyn">
+		<perk name="perkHeatSyn" parent="skillPhysical" name_key="uberSkillsHeatName" desc_key="uberSkillsHeatDesc" icon="cp_heatsyn">
 			<effect_group>
 				<passive_effect name="HyperthermalResist" operation="base_add" level="1" value="5"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" level="2" value="9"/>
@@ -133,15 +133,16 @@
 				<passive_effect name="HyperthermalResist" operation="base_add" level="4" value="14"/>
 				<passive_effect name="HyperthermalResist" operation="base_add" level="5" value="15"/>
 
-				<effect_description level="1" desc_key="HeatSynergyRank1Desc" long_desc_key="HeatSynergyRank1LongDesc"/>
-				<effect_description level="2" desc_key="HeatSynergyRank2Desc" long_desc_key="HeatSynergyRank2LongDesc"/>
-				<effect_description level="3" desc_key="HeatSynergyRank3Desc" long_desc_key="HeatSynergyRank3LongDesc"/>
-				<effect_description level="4" desc_key="HeatSynergyRank4Desc" long_desc_key="HeatSynergyRank4LongDesc"/>
-				<effect_description level="5" desc_key="HeatSynergyRank5Desc" long_desc_key="HeatSynergyRank5LongDesc"/>
+				<effect_description level="1" desc_key="uberSkillsHeat1Short" long_desc_key="uberSkillsHeat1Long"/>
+				<effect_description level="2" desc_key="uberSkillsHeat2Short" long_desc_key="uberSkillsHeat2Long"/>
+				<effect_description level="3" desc_key="uberSkillsHeat3Short" long_desc_key="uberSkillsHeat3Long"/>
+				<effect_description level="4" desc_key="uberSkillsHeat4Short" long_desc_key="uberSkillsHeat4Long"/>
+				<effect_description level="5" desc_key="uberSkillsHeat5Short" long_desc_key="uberSkillsHeat5Long"/>
 			</effect_group>
 		</perk>
 
-			<perk name="perkColdSyn" parent="skillPhysical" name_key="ColdSynergyName" desc_key="ColdSynergyDesc" icon="cp_coldsyn">
+		<!-- Cold Synergy -->
+		<perk name="perkColdSyn" parent="skillPhysical" name_key="uberSkillsColdName" desc_key="uberSkillsColdDesc" icon="cp_coldsyn">
 			<effect_group>
 				<passive_effect name="HypothermalResist" operation="base_add" level="1" value="5"/>
 				<passive_effect name="HypothermalResist" operation="base_add" level="2" value="9"/>
@@ -149,17 +150,18 @@
 				<passive_effect name="HypothermalResist" operation="base_add" level="4" value="14"/>
 				<passive_effect name="HypothermalResist" operation="base_add" level="5" value="15"/>
 
-				<effect_description level="1" desc_key="ColdSynergyRank1Desc" long_desc_key="ColdSynergyRank1LongDesc"/>
-				<effect_description level="2" desc_key="ColdSynergyRank2Desc" long_desc_key="ColdSynergyRank2LongDesc"/>
-				<effect_description level="3" desc_key="ColdSynergyRank3Desc" long_desc_key="ColdSynergyRank3LongDesc"/>
-				<effect_description level="4" desc_key="ColdSynergyRank4Desc" long_desc_key="ColdSynergyRank4LongDesc"/>
-				<effect_description level="5" desc_key="ColdSynergyRank5Desc" long_desc_key="ColdSynergyRank5LongDesc"/>
+				<effect_description level="1" desc_key="uberSkillsCold1Short" long_desc_key="uberSkillsCold1Long"/>
+				<effect_description level="2" desc_key="uberSkillsCold1Short" long_desc_key="uberSkillsCold2Long"/>
+				<effect_description level="3" desc_key="uberSkillsCold1Short" long_desc_key="uberSkillsCold3Long"/>
+				<effect_description level="4" desc_key="uberSkillsCold1Short" long_desc_key="uberSkillsCold4Long"/>
+				<effect_description level="5" desc_key="uberSkillsCold1Short" long_desc_key="uberSkillsCold5Long"/>
 			</effect_group>
 		</perk>
 
+		<!-- Healing Arts -->
 		<perk name="perkHealingArts" parent="skillMental" name_key="HealingArtsName" desc_key="HealingArtsDesc" icon="cp_healingarts">
 			<effect_group>
-		<!--health per tick regulated in buffs.xml-->
+				<!--health per tick regulated in buffs.xml-->
 				<effect_description level="1" desc_key="HealingArtsRank1Desc" long_desc_key="HealingArtsRank1LongDesc"/>
 				<effect_description level="2" desc_key="HealingArtsRank2Desc" long_desc_key="HealingArtsRank2LongDesc"/>
 				<effect_description level="3" desc_key="HealingArtsRank3Desc" long_desc_key="HealingArtsRank3LongDesc"/>
