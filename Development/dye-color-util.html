@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>Uberhaul Extra Dyes</title>
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+tr td {
+  border-bottom: 1px solid black;
+  padding: 0.2em 0.5em;
+}
+
+thead td {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Color Table</h1>
+<table id='dyeTable' cellSpacing=0>
+  <thead>
+    <tr>
+      <td>Dye Name</td>
+      <td>Tint Color</td>
+      <td>Tint Darker</td>
+      <td>Tint Lighter</td>
+  </thead>
+  <tbody id='dyeTableBody'>
+
+  </tbody>
+</table>
+
+<br/>
+
+<h2>Source Code (item_modifiers.xml)</h2>
+<textarea id='sourceCodeOut' cols='180' rows='10' readonly></textarea>
+
+<br/><br/>
+
+<h2>Localization</h2>
+<textarea id='localizationOut' cols='180' rows='10' readonly>
+Key,UsedInMainMenu,Source,Context,Changes,English
+</textarea>
+
+<h3>Source Code Template</h3>
+<xmp id='sourceCodeIn'>
+  <!-- Dye VALUE_NAME -->
+  <item_modifier name="VALUE_ID" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+      <property name="Group" value="Mods"/>
+      <property name="DescriptionKey" value="modDyeGroupDesc"/>
+      <property name="Stacknumber" value="32"/> 
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="CustomIcon" value="modDyeWhite"/> 
+      <property name="Material" value="Mpaint"/>
+      <property name="Weight" value="20"/>
+      <property name="PickupJournalEntry" value="augmentGunsTip"/>
+
+      <property name="CustomIconTint" value="VALUE_TINT"/>
+
+      <item_property_overrides name="*">
+        <property name="TintColor" value="VALUE_TINT"/>
+        <property name="CustomIconTint" value="VALUE_TINT"/>
+        <property name="UMA.Overlay0Tint" value="VALUE_TINT"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelTankTop">
+        <property name="UMA.Overlay0Tint" value="skin"/>
+        <property name="UMA.Overlay1Tint" value="VALUE_TINT"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelTShirtPlain">
+        <property name="UMA.Overlay0Tint" value="skin"/>
+        <property name="UMA.Overlay1Tint" value="VALUE_TINT"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelTShirtZU">
+        <property name="UMA.Overlay0Tint" value="skin"/>
+        <property name="UMA.Overlay1Tint" value="VALUE_TINT"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelDenimShortsPants">
+        <property name="UMA.Overlay0Tint" value="skin"/>
+        <property name="UMA.Overlay1Tint" value="VALUE_TINT"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelCoatJacketLetterZU">
+        <property name="UMA.Overlay0Tint" value="VALUE_TINT,255"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelSuitJacket">
+        <property name="UMA.Overlay0Tint" value="VALUE_DARK"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelSuitPants">
+        <property name="UMA.Overlay0Tint" value="VALUE_DARK"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelSuitDressShoes">
+        <property name="CustomIconTint" value="VALUE_TINT"/>
+        <property name="UMA.Overlay0Tint" value="VALUE_DARK"/>
+      </item_property_overrides>
+
+      <item_property_overrides name="apparelCoatPufferCoat">
+        <property name="CustomIconTint" value="VALUE_LIGHT"/>
+        <property name="UMA.Overlay0Tint" value="VALUE_LIGHT"/>
+      </item_property_overrides>
+    </item_modifier>
+</xmp>
+
+<script type='application/javascript'>
+
+const dyes = [
+  [ 'Candy Apple', '255,52,10' ],
+  [ 'Safety Orange', '255,160,10' ],
+  [ 'Lemon Yellow', '250,255,40' ],
+  [ 'Chartreuse', '180,255,10' ],
+  [ 'Lime Green', '5,255,10' ],
+  [ 'Aquamarine', '5,255,195' ],
+  [ 'Cyan', '5,200,255' ],
+  [ 'Cobalt Blue', '10,46,255' ],
+  [ 'Royal Purple', '160,45,255'],
+  [ 'Magenta', '250,76,255'],
+  [ 'Salmon Pink', '255,72,120' ],
+  [ 'Jet Black', '0,5,10' ],
+  [ 'Silver', '200,205,220' ],
+  [ 'Gold', '212,175,55' ],
+  [ 'Burgundy', '128,0,32' ],
+  [ 'Forest Green', '1,68,33' ],
+  [ 'Indigo', '0,65,106' ],
+];
+
+const darkerMult = -0.4;
+const lighterMult= 0.1;
+
+const dyeTableBody = document.getElementById('dyeTableBody');
+const sourceCodeInEl = document.getElementById('sourceCodeIn');
+const sourceCodeOutEl = document.getElementById('sourceCodeOut');
+const localizationEl = document.getElementById('localizationOut');
+
+const sourceCodeText = sourceCodeInEl.innerHTML;
+
+const minMax = (val, low, hi) => Math.min(Math.max(val, low), hi);
+
+const pSBC=(p,c0,c1,l)=>{
+	let r,g,b,P,f,t,h,i=parseInt,m=Math.round,a=typeof(c1)=="string";
+	if(typeof(p)!="number"||p<-1||p>1||typeof(c0)!="string"||(c0[0]!='r'&&c0[0]!='#')||(c1&&!a))return null;
+	if(!this.pSBCr)this.pSBCr=(d)=>{
+		let n=d.length,x={};
+		if(n>9){
+			[r,g,b,a]=d=d.split(","),n=d.length;
+			if(n<3||n>4)return null;
+			x.r=i(r[3]=="a"?r.slice(5):r.slice(4)),x.g=i(g),x.b=i(b),x.a=a?parseFloat(a):-1
+		}else{
+			if(n==8||n==6||n<4)return null;
+			if(n<6)d="#"+d[1]+d[1]+d[2]+d[2]+d[3]+d[3]+(n>4?d[4]+d[4]:"");
+			d=i(d.slice(1),16);
+			if(n==9||n==5)x.r=d>>24&255,x.g=d>>16&255,x.b=d>>8&255,x.a=m((d&255)/0.255)/1000;
+			else x.r=d>>16,x.g=d>>8&255,x.b=d&255,x.a=-1
+		}return x};
+	h=c0.length>9,h=a?c1.length>9?true:c1=="c"?!h:false:h,f=this.pSBCr(c0),P=p<0,t=c1&&c1!="c"?this.pSBCr(c1):P?{r:0,g:0,b:0,a:-1}:{r:255,g:255,b:255,a:-1},p=P?p*-1:p,P=1-p;
+	if(!f||!t)return null;
+	if(l)r=m(P*f.r+p*t.r),g=m(P*f.g+p*t.g),b=m(P*f.b+p*t.b);
+	else r=m((P*f.r**2+p*t.r**2)**0.5),g=m((P*f.g**2+p*t.g**2)**0.5),b=m((P*f.b**2+p*t.b**2)**0.5);
+	a=f.a,t=t.a,f=a>=0||t>=0,a=f?a<0?t:t<0?a:a*P+t*p:0;
+	if(h)return"rgb"+(f?"a(":"(")+r+","+g+","+b+(f?","+m(a*1000)/1000:"")+")";
+	else return"#"+(4294967296+r*16777216+g*65536+b*256+(f?m(a*255):0)).toString(16).slice(1,f?undefined:-2)
+}
+
+/*
+function processColor(input) {
+  const parts = input.split(',').map(ent => parseInt(ent));
+  const makeDarker = rgb => rgb.map(ent => Math.trunc(ent * darkerMult));
+  const makeLighter = rgb => rgb.map(ent => pSBC());
+  const makeRGB = rgb => rgb.join(',');
+  return [
+    makeRGB( makeDarker(parts) ),
+    makeRGB( makeLighter(parts) ),
+  ];
+}
+*/
+function processColor(input) {
+  const rgb = `rgb(${input})`;
+  const darker = pSBC(darkerMult, rgb);
+  const lighter = pSBC(lighterMult, rgb);
+  const ext = (org) => (org.substring(4, org.length - 1));
+  return [
+    ext(darker),
+    ext(lighter),
+  ];
+}
+
+const appendToLocal = (id, name) => localizationEl.value += `${id},,item_modifiers,mod,newKey,Dye: ${name}\n`;
+
+const appendToSource = (id, name, tint, dark, light) => {
+  const copy = sourceCodeText.replace('VALUE_ID', id)
+    .replace('VALUE_NAME', name)
+    .replaceAll('VALUE_TINT', tint)
+    .replaceAll('VALUE_DARK', dark)
+    .replaceAll('VALUE_LIGHT', light);
+  sourceCodeOutEl.value += copy;
+  sourceCodeOutEl.value += '\n';
+}
+
+(() => {
+  console.log('Starting up!');
+
+  dyes.forEach((dye, ind) => {
+    const [ name, tint ] = dye;
+    const [ darker, lighter ] = processColor(tint);
+    const id = `modDye${name.replace(' ','')}`;
+
+    const tr = document.createElement('tr');
+
+    const tdTitle = document.createElement('td');
+    tdTitle.innerHTML = name;
+    tr.appendChild(tdTitle);
+
+    const tdTint = document.createElement('td');
+    tdTint.innerHTML = tint;
+    tdTint.style = `background-color: rgb(${tint});`;
+    tr.appendChild(tdTint);
+
+    const tdDarker = document.createElement('td');
+    tdDarker.innerHTML = darker;
+    tdDarker.style = `background-color: rgb(${darker});`;
+    tr.appendChild(tdDarker);
+
+    const tdLight = document.createElement('td');
+    tdLight.innerHTML = lighter;
+    tdLight.style = `background-color: rgb(${lighter});`;
+    tr.appendChild(tdLight);
+
+    dyeTableBody.appendChild(tr);
+    console.log('Wrote dye to table', name, tint);
+
+    appendToLocal(id, name);
+    appendToSource(id, name, tint, darker, lighter);
+  });
+})();
+</script>
+</body>
+</html>

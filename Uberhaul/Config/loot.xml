@@ -1,0 +1,49 @@
+<Uberhaul>
+
+  <!-- Add the new dyes to the loot containers -->
+  <append xpath="/lootcontainers/lootgroup[@name='dyes']">
+    <item name="modDyeCandyApple"/>
+    <item name="modDyeSafetyOrange"/>
+    <item name="modDyeLemonYellow"/>
+    <item name="modDyeChartreuse"/>
+    <item name="modDyeLimeGreen"/>
+    <item name="modDyeAquamarine"/>
+    <item name="modDyeCyan"/>
+    <item name="modDyeCobaltBlue"/>
+    <item name="modDyeRoyalPurple"/>
+    <item name="modDyeMagenta"/>
+    <item name="modDyeSalmonPink"/>
+    <item name="modDyeJetBlack"/>
+    <item name="modDyeSilver"/>
+    <item name="modDyeGold"/>
+    <item name="modDyeBurgundy"/>
+    <item name="modDyeForestGreen"/>
+    <item name="modDyeIndigo"/>
+  </append>
+
+  <!-- Add Weapon/Armor Part Schematics -->
+  <append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT0']">
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
+		<item name="gunMGT1AK47PartsSchematic"/>
+		<item name="gunBowT1WoodenBowPartsSchematic"/>
+		<item name="gunHandgunT1PistolPartsSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+		<item name="gunBotRoboticsPartsSchematic"/>
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
+		<item name="armorSteelSetPartsSchematic"/>
+		<item name="armorMilitarySetPartsSchematic"/>
+	</append>
+
+</Uberhaul>

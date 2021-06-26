@@ -1,0 +1,48 @@
+Key,UsedInMainMenu,Source,Context,Changes,English
+modDyeCandyApple,,item_modifiers,mod,newKey,Dye: Candy Apple
+modDyeSafetyOrange,,item_modifiers,mod,newKey,Dye: Safety Orange
+modDyeLemonYellow,,item_modifiers,mod,newKey,Dye: Lemon Yellow
+modDyeChartreuse,,item_modifiers,mod,newKey,Dye: Chartreuse
+modDyeLimeGreen,,item_modifiers,mod,newKey,Dye: Lime Green
+modDyeAquamarine,,item_modifiers,mod,newKey,Dye: Aquamarine
+modDyeCyan,,item_modifiers,mod,newKey,Dye: Cyan
+modDyeCobaltBlue,,item_modifiers,mod,newKey,Dye: Cobalt Blue
+modDyeRoyalPurple,,item_modifiers,mod,newKey,Dye: Royal Purple
+modDyeMagenta,,item_modifiers,mod,newKey,Dye: Magenta
+modDyeSalmonPink,,item_modifiers,mod,newKey,Dye: Salmon Pink
+modDyeJetBlack,,item_modifiers,mod,newKey,Dye: Jet Black
+modDyeSilver,,item_modifiers,mod,newKey,Dye: Silver
+modDyeGold,,item_modifiers,mod,newKey,Dye: Gold
+modDyeBurgundy,,item_modifiers,mod,newKey,Dye: Burgundy
+modDyeForestGreen,,item_modifiers,mod,newKey,Dye: Forest Green
+modDyeIndigo,,item_modifiers,mod,newKey,Dye: Indigo
+
+uberCookingDesc,,blocks,Block,newKey,Start cooking in a proper kitchen
+uberCookingHelper,,blocks,Block,newKey,Cooking appliances for kitchen building
+uberCookingModernOven,,blocks,Workstation,,Modern Oven
+uberCookingOldStove,,blocks,Workstation,,Old Stove
+uberCookingWoodStove,,blocks,Workstation,,Wood Burning Stove
+uberCookingMicrowave,,blocks,Workstation,,Microwave
+uberCookingToaster,,blocks,Workstation,,Toaster
+uberCookingCoffeeBasic,,blocks,Workstation,,Coffee Maker
+uberCookingCoffeePro,,blocks,Workstation,,Professional Coffee Maker
+uberCookingCharcoalGrillClosed,,blocks,Workstation,,"Charcoal Grill (Closed)"
+uberCookingCharcoalGrillOpen,,blocks,Workstation,,"Charcoal Grill (Open)"
+uberCookingGasGrillClosed,,blocks,Workstation,,"Propane Grill (Closed)"
+uberCookingGasGrillOpen,,blocks,Workstation,,"Propane Grill (Open)"
+
+gunRifleT1HuntingRiflePartsSchematic,items,Gun,,,Rifle Parts Schematic
+meleeWpnSpearT3SteelSpearPartsSchematic,items,Gun,,,Steel Spear Parts Schematic
+gunShotgunT1DoubleBarrelPartsSchematic,items,Gun,,,Shotgun Parts Schematic
+meleeWpnClubT3SteelClubPartsSchematic,items,Gun,,,Steel Club Parts Schematic
+meleeWpnSledgeT3SteelSledgehammerPartsSchematic,items,Gun,,,Steel Sledgehammer Parts Schematic
+meleeWpnKnucklesT3SteelKnucklesPartsSchematic,items,Gun,,,Steel Knuckles Parts Schematic
+gunMGT1AK47PartsSchematic,items,Gun,,,Machine Gun Parts Schematic
+gunBowT1WoodenBowPartsSchematic,items,Gun,,,Bow / Crossbow Parts Schematic
+gunHandgunT1PistolPartsSchematic,items,Gun,,,Hand Gun Parts Schematic
+meleeWpnBladeT3MachetePartsSchematic,items,Gun,,,Machete Parts Schematic
+meleeWpnBatonT2StunBatonPartsSchematic,items,Gun,,,Baton Parts Schematic
+gunBotRoboticsPartsSchematic,items,Gun,,,Robotic Parts Schematic,
+gunExplosivesT3RocketLauncherPartsSchematic,items,Gun,,,Rocket Launcher Parts Schematic
+armorSteelSetPartsSchematic,items,Clothes,,,Steel Armor Parts Schematic
+armorMilitarySetPartsSchematic,items,Clothes,,,Military Armor Parts Schematic

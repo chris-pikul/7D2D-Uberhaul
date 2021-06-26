@@ -1,0 +1,69 @@
+<Uberhaul>
+
+  <!-- Cooking Block Adjustments -->
+  <append xpath="/ui_display_info/crafting_category_display">
+    
+    <!-- Allow these to cook everything -->
+    <crafting_category_list display_type="uberCooking">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingModernOven">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingOldStove">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingWoodStove">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+      <crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
+    </crafting_category_list>
+
+    <!-- Allow cooking food & drinks (no chems) -->
+    <crafting_category_list display_type="uberCookingMicrowave">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+    </crafting_category_list>
+
+    <!-- Allow only cooking food -->
+    <crafting_category_list display_type="uberCookingToaster">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingCharcoalGrillClosed">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingCharcoalGrillOpen">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingCharcoalGasClosed">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingCharcoalGasOpen">
+      <crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+    </crafting_category_list>
+
+    <!-- Allow only drinks -->
+    <crafting_category_list display_type="uberCookingCoffeeBasic">
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+    </crafting_category_list>
+
+    <crafting_category_list display_type="uberCookingCoffeePro">
+      <crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+    </crafting_category_list>
+
+  </append>
+
+</Uberhaul>

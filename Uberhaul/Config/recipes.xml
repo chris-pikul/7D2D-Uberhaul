@@ -1,0 +1,356 @@
+<Uberhaul>
+<append xpath="recipes">
+
+  <!-- START DYES -->
+
+  <!-- Yellow Component = resourceCropGoldenrodPlant -->
+  <!-- Red/Purple Component = resourceCropChrysanthemumPlant -->
+  <!-- Blue Component = foodCropBlueberries -->
+  <!-- Green Component = resourceYuccaFibers -->
+  <!-- White Component = resourceBone-->
+  <!-- Black Component = resourceCoal -->
+
+  <!-- Standard OG Dyes -->
+  <recipe name="modDyeRed" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="3"/>
+    <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeGreen" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceYuccaFibers" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeBlue" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="foodCropBlueberries" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeBrown" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceClayLump" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeBlack" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceCoal" count="5"/>
+  </recipe>
+
+  <recipe name="modDyePink" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceBone" count="2"/>
+    <ingredient name="resourceCropChrysanthemumPlant" count="3"/>
+  </recipe>
+
+  <recipe name="modDyePurple" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeYellow" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+    
+    <ingredient name="resourceCropGoldenrodPlant" count="5"/>
+  </recipe>
+
+  <!-- New Dyes -->
+  <recipe name="" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeCandyApple" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+    <ingredient name="resourceCropChrysanthemumPlant" count="4"/>
+  </recipe>
+
+  <recipe name="modDyeSafetyOrange" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="3"/>
+    <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeLemonYellow" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeChartreuse" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="2"/>
+    <ingredient name="resourceYuccaFibers" count="3"/>
+  </recipe>
+
+  <recipe name="modDyeLimeGreen" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+    <ingredient name="resourceYuccaFibers" count="4"/>
+  </recipe>
+
+  <recipe name="modDyeAquamarine" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceYuccaFibers" count="2"/>
+    <ingredient name="foodCropBlueberries" count="3"/>
+  </recipe>
+
+  <recipe name="modDyeCyan" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceYuccaFibers" count="1"/>
+    <ingredient name="foodCropBlueberries" count="4"/>
+  </recipe>
+
+  <recipe name="modDyeCobaltBlue" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="foodCropBlueberries" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeRoyalPurple" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="foodCropBlueberries" count="3"/>
+    <ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeMagenta" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeSalmonPink" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropChrysanthemumPlant" count="3"/>
+    <ingredient name="resourceCropGoldenrodPlant" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeJetBlack" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCoal" count="10"/>
+  </recipe>
+
+  <recipe name="modDyeSilver" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCoal" count="5"/>
+    <ingredient name="resourceBone" count="5"/>
+  </recipe>
+
+  <recipe name="modDyeGold" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropGoldenrodPlant" count="5"/>
+    <ingredient name="resourceCoal" count="2"/>
+    <ingredient name="resourceBone" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeBurgundy" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceCropChrysanthemumPlant" count="3"/>
+    <ingredient name="resourceCoal" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeForestGreen" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="resourceYuccaFibers" count="3"/>
+    <ingredient name="resourceCoal" count="2"/>
+  </recipe>
+
+  <recipe name="modDyeIndigo" count="1" craft_area="campfire" craft_tool="toolBeaker">
+    <ingredient name="drinkJarRiverWater" count="1"/>
+    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
+
+    <ingredient name="foodCropBlueberries" count="3"/>
+    <ingredient name="resourceCoal" count="2"/>
+  </recipe>
+
+  <!-- END DYES -->
+  <!-- START WEAPON_PARTS -->
+
+  <!-- Rifle -->
+  <recipe name="gunRifleT1HuntingRifleParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDeadEye,learnable">
+    <ingredient name="unit_iron" count="300"/>
+    <ingredient name="unit_clay" count="60"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Steel Spear -->
+  <recipe name="meleeWpnSpearT3SteelSpearParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkJavelinMaster,learnable">
+    <ingredient name="unit_iron" count="100"/>
+    <ingredient name="unit_clay" count="20"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Shoutgun -->
+  <recipe name="gunShotgunT1DoubleBarrelParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkBoomstick,learnable">
+    <ingredient name="unit_iron" count="300"/>
+    <ingredient name="unit_clay" count="60"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Steel Club -->
+  <recipe name="meleeWpnClubT3SteelClubParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkPummelPete,learnable">
+    <ingredient name="unit_iron" count="50"/>
+    <ingredient name="unit_clay" count="10"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Steel Sledgehammer -->
+  <recipe name="meleeWpnSledgeT3SteelSledgehammerParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkSkullCrusher,learnable">
+    <ingredient name="unit_iron" count="100"/>
+    <ingredient name="unit_clay" count="20"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Steel Knuckles -->
+  <recipe name="meleeWpnKnucklesT3SteelKnucklesParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkBrawler,learnable">
+    <ingredient name="unit_iron" count="50"/>
+    <ingredient name="unit_clay" count="10"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Machine Gun -->
+  <recipe name="gunMGT1AK47Parts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkMachineGunner,learnable">
+    <ingredient name="unit_iron" count="300"/>
+    <ingredient name="unit_clay" count="60"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Bow -->
+  <recipe name="gunBowT1WoodenBowParts" count="1" craft_area="workbench" tags="perkArchery,learnable">
+    <ingredient name="resourceForgedIron" count="2"/>
+    <ingredient name="resourceWood" count="10"/>
+    <ingredient name="resourceMechanicalParts" count="3"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="resourceWood,resourceMechanicalParts"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Hand Gun -->
+  <recipe name="gunHandgunT1PistolParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkGunslinger,learnable">
+    <ingredient name="unit_iron" count="200"/>
+    <ingredient name="unit_clay" count="40"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Machete -->
+  <recipe name="meleeWpnBladeT3MacheteParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDeepCuts,learnable">
+    <ingredient name="unit_iron" count="150"/>
+    <ingredient name="unit_clay" count="30"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Baton -->
+  <recipe name="meleeWpnBatonT2StunBatonParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkElectrocutioner,learnable">
+    <ingredient name="unit_iron" count="150"/>
+    <ingredient name="unit_clay" count="30"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Robotic -->
+  <recipe name="gunBotRoboticsParts" count="1" craft_area="workbench" tags="perkTurrets,learnable">
+    <ingredient name="resourceForgedIron" count="20"/>
+    <ingredient name="resourceElectricParts" count="4"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="resourceForgedIron,resourceElectricParts"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Rocket Launcher -->
+  <recipe name="gunExplosivesT3RocketLauncherParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkDemolitionsExpert,learnable">
+    <ingredient name="unit_iron" count="400"/>
+    <ingredient name="unit_clay" count="80"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- END WEAPON_PARTS -->
+  <!-- START ARMOR_PARTS -->
+
+  <!-- Steel Armor -->
+  <recipe name="armorSteelSetParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkHeavyArmor,learnable">
+    <ingredient name="unit_iron" count="200"/>
+    <ingredient name="unit_clay" count="40"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- Military Armor -->
+  <recipe name="armorMilitarySetParts" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkLightArmor,learnable">
+    <ingredient name="unit_iron" count="150"/>
+    <ingredient name="unit_clay" count="30"/>
+    <effect_group>
+      <passive_effect name="CraftingIngredientCount" level="5" operation="perc_add" value="-.5" tags="unit_iron,unit_clay"/>
+    </effect_group>
+  </recipe>
+
+  <!-- END ARMOR_PARTS -->
+
+</append>
+</Uberhaul>
