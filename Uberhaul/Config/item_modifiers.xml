@@ -1,16 +1,17 @@
 <Uberhaul>
+
+<!-- Alter stack sizes on default dyes -->
+<setattribute xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/property[@name='Stacknumber']/@value">32</setattribute>
+
+<!-- Set install (loot) chances for default dyes -->
+<setattribute xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.025</setattribute>
+
+<!-- Reset white dye again, it is incomplete in the OG -->
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</setattribute>
+
 <append xpath="/item_modifiers">
 
   <!-- START DYES -->
-
-  <!-- Alter stack sizes on default dyes -->
-  <set xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/property[@name='Stacknumber']/@value">32</set>
-
-  <!-- Set install (loot) chances for default dyes -->
-  <set xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.025</set>
-  
-  <!-- Reset white dye again, it is incomplete in the OG -->
-  <set xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</set>
 
   <!-- Dye Candy Apple -->
   <item_modifier name="modDyeCandyApple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
