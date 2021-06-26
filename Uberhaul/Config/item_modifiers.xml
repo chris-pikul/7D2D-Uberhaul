@@ -7,13 +7,13 @@
   <set xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/property[@name='Stacknumber']/@value">32</set>
 
   <!-- Set install (loot) chances for default dyes -->
-  <set xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.05</set>
+  <set xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.025</set>
   
   <!-- Reset white dye again, it is incomplete in the OG -->
   <set xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</set>
 
   <!-- Dye Candy Apple -->
-  <item_modifier name="modDyeCandyApple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+  <item_modifier name="modDyeCandyApple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -76,7 +76,7 @@
 
 
 <!-- Dye Safety Orange -->
-<item_modifier name="modDyeSafetyOrange" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeSafetyOrange" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -139,7 +139,7 @@
 
 
 <!-- Dye Lemon Yellow -->
-<item_modifier name="modDyeLemonYellow" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeLemonYellow" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -202,7 +202,7 @@
 
 
 <!-- Dye Chartreuse -->
-<item_modifier name="modDyeChartreuse" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeChartreuse" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -265,7 +265,7 @@
 
 
 <!-- Dye Lime Green -->
-<item_modifier name="modDyeLimeGreen" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeLimeGreen" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -328,7 +328,7 @@
 
 
 <!-- Dye Aquamarine -->
-<item_modifier name="modDyeAquamarine" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeAquamarine" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -391,7 +391,7 @@
 
 
 <!-- Dye Cyan -->
-<item_modifier name="modDyeCyan" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeCyan" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -454,7 +454,7 @@
 
 
 <!-- Dye Cobalt Blue -->
-<item_modifier name="modDyeCobaltBlue" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeCobaltBlue" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -517,7 +517,7 @@
 
 
 <!-- Dye Royal Purple -->
-<item_modifier name="modDyeRoyalPurple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeRoyalPurple" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -580,7 +580,7 @@
 
 
 <!-- Dye Magenta -->
-<item_modifier name="modDyeMagenta" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeMagenta" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -643,7 +643,7 @@
 
 
 <!-- Dye Salmon Pink -->
-<item_modifier name="modDyeSalmonPink" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeSalmonPink" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -706,7 +706,7 @@
 
 
 <!-- Dye Jet Black -->
-<item_modifier name="modDyeJetBlack" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeJetBlack" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -769,7 +769,7 @@
 
 
 <!-- Dye Silver -->
-<item_modifier name="modDyeSilver" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeSilver" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -832,7 +832,7 @@
 
 
 <!-- Dye Gold -->
-<item_modifier name="modDyeGold" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeGold" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -895,7 +895,7 @@
 
 
 <!-- Dye Burgundy -->
-<item_modifier name="modDyeBurgundy" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeBurgundy" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -958,7 +958,7 @@
 
 
 <!-- Dye Forest Green -->
-<item_modifier name="modDyeForestGreen" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeForestGreen" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 
@@ -1021,7 +1021,7 @@
 
 
 <!-- Dye Indigo -->
-<item_modifier name="modDyeIndigo" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance=".05">
+<item_modifier name="modDyeIndigo" installable_tags="clothing,armor,weapon,tool,vehicle" modifier_tags="dye" type="attachment" cosmetic_install_chance="0.025">
     <property name="Group" value="Mods"/>
     <property name="DescriptionKey" value="modDyeGroupDesc"/>
     <property name="Stacknumber" value="32"/> 

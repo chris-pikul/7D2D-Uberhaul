@@ -20,7 +20,7 @@ C:/Program Files(x86)/Steam/steamapps/common/7 Days To Die/Mods
   - Added 17 new dye colors.
   - All dyes now have a recipe to craft, using a campfire with beaker.
   - All dyes should now stack to 32 in the inventory.
-  - Adjusted loot tables to have a 5% chance for dye installation.
+  - Adjusted loot tables to have a 2.5% chance for dye installation (25 x 2.5% = 62% Chance).
 - **Cooking** - New functional blocks to cook with.
   - New helper block allows the building of cooking appliances found in game already.
   - Made these new appliances functional as "campfires".
