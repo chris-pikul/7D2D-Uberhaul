@@ -1,13 +1,24 @@
 <Uberhaul>
 
 <!-- Alter stack sizes on default dyes -->
-<setattribute xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/property[@name='Stacknumber']/@value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeRed']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeGreen']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBlack']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBlue']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBrown']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyePink']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyePurple']/property[@name='Stacknumber']" name="value">32</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeYellow']/property[@name='Stacknumber']" name="value">32</setattribute>
 
 <!-- Set install (loot) chances for default dyes -->
-<setattribute xpath="/item_modifiers/item_modifier[@modifier_tags='dye']/@cosmetic_install_chance">0.025</setattribute>
-
-<!-- Reset white dye again, it is incomplete in the OG -->
-<!-- <setattribute xpath="/item_modifiers/item_modifier[@name='modDyeWhite']/@cosmetic_install_chance">0</setattribute> -->
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeRed']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeGreen']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBlack']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBlue']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeBrown']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyePink']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyePurple']" name="cosmetic_install_chance">0.025</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modDyeYellow']" name="cosmetic_install_chance">0.025</setattribute>
 
 <append xpath="/item_modifiers">
 
