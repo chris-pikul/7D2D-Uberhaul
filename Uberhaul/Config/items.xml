@@ -2,20 +2,8 @@
 
   <!-- START PART_SCHEMATICS -->
   <append xpath="/items">
-    <!-- Rifle Parts Schematic -->
-    <item name="gunRifleT1HuntingRiflePartsSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
-			<property name="Unlocks" value="gunRifleT1HuntingRifleParts"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifleParts" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-
-    <!-- Steel Spear Parts Schematic -->
-		<item name="meleeWpnSpearT3SteelSpearPartsSchematic">
+		<!-- Steel Spear Parts Schematic -->
+		<item name="uberSteelSpearPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
@@ -26,20 +14,8 @@
 			</effect_group>
 		</item>
 
-    <!-- Shotgun Parts Schematic -->
-		<item name="gunShotgunT1DoubleBarrelPartsSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
-			<property name="Unlocks" value="gunShotgunT1DoubleBarrelParts"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrelParts" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-
-    <!-- Steel Club Parts Schematic -->
-		<item name="meleeWpnClubT3SteelClubPartsSchematic">
+		<!-- Steel Club Parts Schematic -->
+		<item name="uberSteelClubPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnClubT3SteelClubParts"/>
@@ -50,8 +26,8 @@
 			</effect_group>
 		</item>
 
-    <!-- Steel Sledge Parts Schematic -->
-		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic">
+		<!-- Steel Sledge Parts Schematic -->
+		<item name="uberSteelSledgePartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
@@ -62,8 +38,8 @@
 			</effect_group>
 		</item>
 
-    <!-- Steel Knucks Parts Schematic -->
-		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic">
+		<!-- Steel Knucks Parts Schematic -->
+		<item name="uberSteelKnuckPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
@@ -74,8 +50,56 @@
 			</effect_group>
 		</item>
 
+		<!-- Machete Parts Schematic -->
+		<item name="uberMachetePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBladeT3MacheteParts"/>
+			<property name="Unlocks" value="meleeWpnBladeT3MacheteParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3MacheteParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<!-- Baton Parts Schematic -->
+		<item name="uberBatonPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBatonT2StunBatonParts"/>
+			<property name="Unlocks" value="meleeWpnBatonT2StunBatonParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBatonParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+    <!-- Rifle Parts Schematic -->
+    <item name="uberRiflePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+			<property name="Unlocks" value="gunRifleT1HuntingRifleParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifleParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+    <!-- Shotgun Parts Schematic -->
+		<item name="uberShotgunPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+			<property name="Unlocks" value="gunShotgunT1DoubleBarrelParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrelParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
     <!-- Machine Gun Parts Schematic -->
-		<item name="gunMGT1AK47PartsSchematic">
+		<item name="uberMachineGunPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="gunMGT1AK47Parts"/>
@@ -87,7 +111,7 @@
 		</item>
 
     <!-- Bow Parts Schematic -->
-		<item name="gunBowT1WoodenBowPartsSchematic">
+		<item name="uberBowPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="gunBowT1WoodenBowParts"/>
@@ -99,7 +123,7 @@
 		</item>
 
     <!-- Handgun Parts Schematic -->
-		<item name="gunHandgunT1PistolPartsSchematic">
+		<item name="uberHandgunPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="gunHandgunT1PistolParts"/>
@@ -110,32 +134,8 @@
 			</effect_group>
 		</item>
 
-    <!-- Machete Parts Schematic -->
-		<item name="meleeWpnBladeT3MachetePartsSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="meleeWpnBladeT3MacheteParts"/>
-			<property name="Unlocks" value="meleeWpnBladeT3MacheteParts"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3MacheteParts" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-
-    <!-- Baton Parts Schematic -->
-		<item name="meleeWpnBatonT2StunBatonPartsSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="meleeWpnBatonT2StunBatonParts"/>
-			<property name="Unlocks" value="meleeWpnBatonT2StunBatonParts"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBatonParts" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
-
     <!-- Robotic Parts Schematic -->
-		<item name="gunBotRoboticsPartsSchematic">
+		<item name="uberRoboticPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="gunBotRoboticsParts"/>
@@ -147,7 +147,7 @@
 		</item>
 
     <!-- Rocket Launcher Parts Schematic -->
-		<item name="gunExplosivesT3RocketLauncherPartsSchematic">
+		<item name="uberRocketLauncherPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="gunExplosivesT3RocketLauncherParts"/>
@@ -159,7 +159,7 @@
 		</item>
 
     <!-- Steel Armor Parts Schematic -->
-		<item name="armorSteelSetPartsSchematic">
+		<item name="uberSteelArmorPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="armorSteelSetParts"/>
@@ -171,7 +171,7 @@
 		</item>
 
     <!-- Military Armor Parts Schematic -->
-		<item name="armorMilitarySetPartsSchematic">
+		<item name="uberMilitaryArmorPartsSchematic">
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="armorMilitarySetParts"/>
@@ -185,49 +185,49 @@
 
   <!-- Modify the "Unlocked By" portions for each schematic -->
   <insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkDeadEye,gunRifleT1HuntingRiflePartsSchematic"/>
+    <property name="UnlockedBy" value="perkDeadEye,uberRiflePartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkJavelinMaster,meleeWpnSpearT3SteelSpearPartsSchematic"/>
+    <property name="UnlockedBy" value="perkJavelinMaster,uberSteelSpearPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkBoomstick,gunShotgunT1DoubleBarrelPartsSchematic"/>
+    <property name="UnlockedBy" value="perkBoomstick,uberShotgunPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkPummelPete,meleeWpnClubT3SteelClubPartsSchematic"/>
+    <property name="UnlockedBy" value="perkPummelPete,uberSteelClubPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkSkullCrusher,meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+    <property name="UnlockedBy" value="perkSkullCrusher,uberSteelSledgePartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkBrawler,meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+    <property name="UnlockedBy" value="perkBrawler,uberSteelKnuckPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkMachineGunner,gunMGT1AK47PartsSchematic"/>
+    <property name="UnlockedBy" value="perkMachineGunner,uberMachineGunPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkArchery,gunBowT1WoodenBowPartsSchematic"/>
+    <property name="UnlockedBy" value="perkArchery,uberBowPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkGunslinger,gunHandgunT1PistolPartsSchematic"/>
+    <property name="UnlockedBy" value="perkGunslinger,uberHandgunPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT3MachetePartsSchematic"/>
+    <property name="UnlockedBy" value="perkDeepCuts,uberMachetePartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkElectrocutioner,meleeWpnBatonT2StunBatonPartsSchematic"/>
+    <property name="UnlockedBy" value="perkElectrocutioner,uberBatonPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkTurrets,gunBotRoboticsPartsSchematic"/>
+    <property name="UnlockedBy" value="perkTurrets,uberRoboticPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkTurrets,gunExplosivesT3RocketLauncherPartsSchematic"/>
+    <property name="UnlockedBy" value="perkTurrets,uberRocketLauncherPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkHeavyArmor,armorSteelSetPartsSchematic"/>
+    <property name="UnlockedBy" value="perkHeavyArmor,uberSteelArmorPartsSchematic"/>
   </insertAfter>
   <insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Extends']">
-    <property name="UnlockedBy" value="perkLightArmor,armorMilitarySetPartsSchematic"/>
+    <property name="UnlockedBy" value="perkLightArmor,uberMilitaryArmorPartsSchematic"/>
   </insertAfter>
 
   <!-- END PART_SCHEMATICS -->

@@ -1,3 +1,22 @@
 <Uberhaul>
 
+<!-- Weapon/Armor Parts Schematics -->
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsWeaponsCommon']">
+  <item name="uberSteelSpearPartsSchematic"/>
+  <item name="uberSteelClubPartsSchematic"/>
+  <item name="uberSteelSledgePartsSchematic"/>
+  <item name="uberSteelKnuckPartsSchematic"/>
+  <item name="uberMachetePartsSchematic"/>
+  <item name="uberBatonPartsSchematic"/>
+  <item name="uberRiflePartsSchematic"/>
+  <item name="uberShotgunPartsSchematic"/>
+  <item name="uberMachineGunPartsSchematic"/>
+  <item name="uberBowPartsSchematic"/>
+  <item name="uberHandgunPartsSchematic"/>
+  <item name="uberRoboticPartsSchematic"/>
+  <item name="uberRocketLauncherPartsSchematic"/>
+  <item name="uberSteelArmorPartsSchematic"/>
+  <item name="uberMilitaryArmorPartsSchematic"/>
+</append>
+
 </Uberhaul>

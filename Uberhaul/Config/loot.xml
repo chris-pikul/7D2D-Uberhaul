@@ -23,27 +23,27 @@
 
   <!-- Add Weapon/Armor Part Schematics -->
   <append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT0']">
-		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
-		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
-		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
-		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
-		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
-		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
+		<item name="uberSteelSpearPartsSchematic"/>
+		<item name="uberSteelClubPartsSchematic"/>
+		<item name="uberSteelSledgePartsSchematic"/>
+		<item name="uberSteelKnuckPartsSchematic"/>
+		<item name="uberMachetePartsSchematic"/>
+		<item name="uberBatonPartsSchematic"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
-		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
-		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
-		<item name="gunMGT1AK47PartsSchematic"/>
-		<item name="gunBowT1WoodenBowPartsSchematic"/>
-		<item name="gunHandgunT1PistolPartsSchematic"/>
+		<item name="uberRiflePartsSchematic"/>
+		<item name="uberShotgunPartsSchematic"/>
+		<item name="uberMachineGunPartsSchematic"/>
+		<item name="uberBowPartsSchematic"/>
+		<item name="uberHandgunPartsSchematic"/>
 	</append>
 
 	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
-		<item name="gunBotRoboticsPartsSchematic"/>
-		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
-		<item name="armorSteelSetPartsSchematic"/>
-		<item name="armorMilitarySetPartsSchematic"/>
+		<item name="uberRoboticPartsSchematic"/>
+		<item name="uberRocketLauncherPartsSchematic"/>
+		<item name="uberSteelArmorPartsSchematic"/>
+		<item name="uberMilitaryArmorPartsSchematic"/>
 	</append>
 
 </Uberhaul>
