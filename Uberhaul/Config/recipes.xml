@@ -70,11 +70,6 @@
   </recipe>
 
   <!-- New Dyes -->
-  <recipe name="" count="1" craft_area="campfire" craft_tool="toolBeaker">
-    <ingredient name="drinkJarRiverWater" count="1"/>
-    <ingredient name="resourcePotassiumNitratePowder" count="5"/>
-  </recipe>
-
   <recipe name="modDyeCandyApple" count="1" craft_area="campfire" craft_tool="toolBeaker">
     <ingredient name="drinkJarRiverWater" count="1"/>
     <ingredient name="resourcePotassiumNitratePowder" count="5"/>
