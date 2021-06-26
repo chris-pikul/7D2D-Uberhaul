@@ -1,4 +1,4 @@
-# 7D2D-Uberhaul
+# 7 Days to Die - Uberhaul Mod
 
 A "7 Days To Die" modlet pack for A19. This pack attempts to combine many 7D2D modlets provided by the community into a larger "one-time install" mod-pack, think overhaul mod.
 
@@ -37,7 +37,9 @@ C:/Program Files(x86)/Steam/steamapps/common/7 Days To Die/Mods
 
 Most all of the data provided in this mod has been taken from other existing mods with some exceptions. Even those that have been taken are generally modified to either balance or fit properly in this pack. Here is the list of "source material" that this mod uses:
 
-- 
+- [Better Homes and Worlds - Modern Cooking](https://www.nexusmods.com/7daystodie/mods/1219)
+- [Better Homes and Worlds - Army Surplus](https://www.nexusmods.com/7daystodie/mods/1233)
+- [Custom Perks - Prestige Skills](https://www.nexusmods.com/7daystodie/mods/783)
 
 ## License
 
