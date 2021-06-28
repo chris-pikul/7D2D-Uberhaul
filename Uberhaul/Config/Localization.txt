@@ -19,7 +19,7 @@ modDyeForestGreen,item_modifiers,Dyes,Dye: Forest Green
 modDyeIndigo,item_modifiers,Dyes,Dye: Indigo
 
 uberCookingDesc,blocks,Cooking,Start cooking in a proper kitchen
-uberCookingHelper,blocks,Cooking,Cooking appliances for kitchen building
+uberCookingHelper,blocks,Cooking,Cooking Appliances
 uberCookingModernOven,blocks,Cooking,Modern Oven
 uberCookingOldStove,blocks,Cooking,Old Stove
 uberCookingWoodStove,blocks,Cooking,Wood Burning Stove

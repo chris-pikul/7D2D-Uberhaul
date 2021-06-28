@@ -62,7 +62,7 @@
   <block name="uberCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
     <property name="Extends" value="uberCooking" />
 
-    <property name="DescriptionKey" value="uberCookingDesc"/>
+    <property name="DescriptionKey" value="uberCookingHelper"/>
     <property name="CreativeMode" value="Player"/>
     <property name="CustomIcon" value="cntWallOven"/>
     <property name="ItemTypeIcon" value="all_blocks"/>
